@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'web-font';
+    src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(175deg, rgba(255,255,255,1) 0%, rgba(236,243,253,1) 100%);
+    font-family: web-font, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    height: 1000px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #f7f7f6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
+    height: 800px;
+}
+
+h1 {
+    color: #0574bc;
+    font-size: 70px;
+    margin-bottom: 1rem;
+    font-weight: 100px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    transition-delay: 0.1s;
+    background: #0574bc;
+    transition: all 0.1s linear;
+    color: white;
+    border: none;
+    border-radius: 25px  25px  25px  25px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: web-font, sans-serif;
+    font-size: 20px;
+}
+
+button:hover {
+    background: #0574bc;
+    font-family: web-font, sans-serif;
+    color: white;
+    font-size: 20px;
+    border: 0.1rem solid grey;
+}
