@@ -41,7 +41,15 @@ h1 {
 }
 
 /* Tarjetas con efecto de giro */
-.tarjeta {
+.tarjeta1 {
+    width: 500px;
+    height: 600px;
+    perspective: 1000px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.tarjeta2 {
     width: 500px;
     height: 600px;
     perspective: 1000px;
@@ -57,7 +65,11 @@ h1 {
     transform-style: preserve-3d;
 }
 
-.tarjeta:hover .tarjeta-dentro {
+.tarjeta1:hover .tarjeta-dentro {
+    transform: rotateY(180deg);
+}
+
+.tarjeta2:hover .tarjeta-dentro {
     transform: rotateY(180deg);
 }
 
