@@ -6,12 +6,12 @@
 }
 
 body {
-    background: linear-gradient(175deg, rgba(255,255,255,1) 0%, rgba(236,243,253,1) 100%);
-    font-family: web-font, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%); /* Simple modern gradient */
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
     text-align: center;
-    height: 1000px;
+    height: auto;
 }
 
 .container {
@@ -29,6 +29,7 @@ h1 {
     font-size: 70px;
     margin-bottom: 1rem;
     font-weight: 100px;
+    letter-spacing: -2px;
 }
 
 img {
@@ -47,17 +48,73 @@ button {
     transition: all 0.1s linear;
     color: white;
     border: none;
-    border-radius: 25px  25px  25px  25px;
+    border-radius: 22px;
     cursor: pointer;
     margin-top: 20px;
-    font-family: web-font, sans-serif;
-    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
 }
 
 button:hover {
-    background: #0574bc;
-    font-family: web-font, sans-serif;
+    background: #116296;
+    font-family: Helvetica, sans-serif;
     color: white;
-    font-size: 20px;
-    border: 0.1rem solid grey;
+    font-size: 25px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    img {
+        width: 300px;
+        height: 450px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    img {
+        width: 250px;
+        height: 375px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    img {
+        width: 200px;
+        height: 300px;
+    }
+
+    button {
+        font-size: 16px;
+    }
 }
