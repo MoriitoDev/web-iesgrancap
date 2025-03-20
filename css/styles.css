@@ -8,7 +8,7 @@
 
 body {
     background: linear-gradient(135deg, #f7f9fc 0%, #e3e9ef 100%); /* Softer, more inviting gradient */
-    font-family: 'web-font', Arial, Helvetica, sans-serif; /* Use custom font */
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -19,7 +19,7 @@ body {
 .container {
     max-width: 1600px;
     margin: 0 auto;
-    background: #ffffff; /* White background for better contrast */
+    background: #f9e4c0; /* White background for better contrast */
     border-radius: 12px; /* Slightly more rounded edges */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
     padding: 40px; /* Increased padding for spacious layout */
@@ -61,11 +61,10 @@ h1::after {
     margin: 20px;
     cursor: pointer;
     transition: transform 0.2s; /* Added hover transition */
-    border: 2px solid #efac4f; /* Decorative border */
-    background: rgba(255, 255, 255, 0.8); /* Slight transparency for layered effect */
     border-radius: 15px; /* Smoother corners */
     overflow: hidden; /* Prevent overflow of content */
     position: relative; /* Positioning for decoration */
+    background:  transparent;
 }
 
 /* Add a decorative shadow effect behind the cards */
@@ -197,3 +196,24 @@ h1::after {
         height: 350px; /* Adjusted card size */
     }
 }
+
+/* Animación para el contenedor principal */
+.container {
+    /* Opcional: estado inicial para evitar "parpadeo" */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  /* Definición de la animación */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
